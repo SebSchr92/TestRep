@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/17MklINvHudfj60AXacbDyR2iwzNnXtmL
 """
 
-!pip install Historic-Crypto
+pip install Historic-Crypto
 from Historic_Crypto import HistoricalData
 from Historic_Crypto import LiveCryptoData
 from Historic_Crypto import Cryptocurrencies
