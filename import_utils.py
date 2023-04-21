@@ -7,10 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/17MklINvHudfj60AXacbDyR2iwzNnXtmL
 """
 
-pip install Historic-Crypto
-from Historic_Crypto import HistoricalData
-from Historic_Crypto import LiveCryptoData
-from Historic_Crypto import Cryptocurrencies
+
 import datetime
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -19,15 +16,6 @@ import numpy as np
 import plotly.graph_objects as go
 import gzip
 import io
-
-#from google.colab import drive
-#drive.mount('/content/drive')
-
-# Fetch OHLCV data
-def fetch_data(ticker='BTC-USD', granularity=60, start_date='2017-07-22-00-00', end_date=None, verbose=False):
-  df = HistoricalData(ticker, granularity, start_date, end_date, verbose).retrieve_data()
-  return df
-
 
 def check_raw_data(df, freq='D'):
   print('---------------------------------------------')
